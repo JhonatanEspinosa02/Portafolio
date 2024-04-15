@@ -39,7 +39,7 @@ function Header() {
             </button>
         </nav>
 
-        <div className="bg-black pb-[113px] grid grid-cols-1 lg:grid-cols-2  items-center justify-items-center">
+        <div className="bg-black px-3 pb-[113px] grid grid-cols-1 lg:grid-cols-2  items-center justify-items-center">
             <div className="">
                 <h1 className="text-white font-bold text-6xl">FullStack & <br /> UX/UI Developer</h1>
                 <p className="text-neutral-400 font-semibold text-lg pt-8">Hi, my name is Jhonatan Espinosa, based in Mexico City. <br />  Welcome to my Portafolio.</p>
