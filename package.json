@@ -2,7 +2,7 @@
   "name": "book-product",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://JhonatanEspinosa02.github.io/{Portafolio}",
+  "homepage": "https://JhonatanEspinosa02.github.io/Portafolio/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",

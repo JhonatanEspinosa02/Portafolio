@@ -41,7 +41,7 @@ function Header() {
 
         <div className="bg-black px-3 pb-[113px] grid grid-cols-1 lg:grid-cols-2  items-center justify-items-center">
             <div className="">
-                <h1 className="text-white font-bold text-6xl">FullStack & <br /> UX/UI Developer</h1>
+                <h1 className="text-white font-bold text-6xl">FullStack & <br /> <span className="text-amber-600"> UX/UI Developer </span></h1>
                 <p className="text-neutral-400 font-semibold text-lg pt-8">Hi, my name is Jhonatan Espinosa, based in Mexico City. <br />  Welcome to my Portafolio.</p>
                 <div className="mt-10">
                 <a href="#" className="bg-amber-600 text-white px-7 py-2 text-xl rounded-lg hover:bg-amber-700">About Me</a>
