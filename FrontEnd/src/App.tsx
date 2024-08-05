@@ -1,6 +1,7 @@
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import ClientDataForm from "./components/ClientDataForm";
+import Modal from "./components/Modal";
 import {
   FaGithub,
   FaMoon,
@@ -12,8 +13,19 @@ import { IoLanguageOutline } from "react-icons/io5";
 import { MdEmail, MdShare } from "react-icons/md";
 import { ToastContainer } from "react-toastify";
 import Skills from "./components/Skills";
+import { useState } from "react";
 
 function App() {
+  const [modal, setModal] = useState(false);
+
+  const openModal = () => {
+    setModal(true);
+  };
+
+  const closeModal = () => {
+    setModal(false);
+  };
+
   return (
     <>
       <header className="bg-black container mx-auto p-10">
@@ -108,9 +120,13 @@ function App() {
                 <MdEmail className="w-6 h-6 my-11" />
               </a>
               <div className="h-[0.5px] w-8 bg-white my-4"></div>
+
               <div className="flex items-center gap-2">
                 <p className="uppercase text-xl my-11">Share</p>
-                <MdShare className="w-6 h-6 my-11" />
+                <button onClick={openModal}>
+                  <MdShare className="w-6 h-6 my-11" />
+                  <Modal modal={modal} closeModal={closeModal} />
+                </button>
               </div>
             </div>
           </div>
@@ -128,25 +144,24 @@ function App() {
           </div>
         </div>
       </header>
-      <AboutMe/>
-      <Projects/>
-      <Skills/>
-      <ClientDataForm/>
-      <ToastContainer/>
+      <AboutMe />
+      <Projects />
+      <Skills />
+      <ClientDataForm />
+      <ToastContainer />
     </>
   );
 }
 
+// if (Object.values(data).includes("")) {
+// }
+// let error = "";
+// if (Object.values(data).includes("")) {
+//   error = "All fields are required";
+// }
 
-  // if (Object.values(data).includes("")) {
-  // } 
-  // let error = "";
-  // if (Object.values(data).includes("")) {
-  //   error = "All fields are required";
-  // }
-
-  // if (error.length) {
-  //   return error;
-  // }
+// if (error.length) {
+//   return error;
+// }
 
 export default App;

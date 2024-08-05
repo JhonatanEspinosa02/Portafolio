@@ -1,4 +1,4 @@
-import { TypeInfo, TypeProjects } from "../Types/type"
+import { TypeInfo, TypeProjects, linksType } from "../Types/type"
 
 export const Technologies : TypeInfo[] = [
     {
@@ -154,8 +154,25 @@ export const projects : TypeProjects[] = [
     },
 ]
 
-
-          
+export const socialMediaLinks: linksType[] = [
+    {
+        media: "LinkedIn",
+        link: "www.linkedin.com/in/jhonatanespinosa21"
+    },
+    {
+        media: "Instagram",
+        link: "https://www.instagram.com/j.espinosa02"
+    },
+    {
+        media: "WhatsApp",
+        link: "+52 5588367385"
+    },
+    {
+        media: "Gmail",
+        link: "jhonatan.esp21@gmail.com"
+    }
+]
+      
           
 
 

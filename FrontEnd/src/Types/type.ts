@@ -23,3 +23,8 @@ export type ClientFormType = {
     message: string,
 }
 
+export type linksType = {
+    media: string,
+    link: string
+}
+

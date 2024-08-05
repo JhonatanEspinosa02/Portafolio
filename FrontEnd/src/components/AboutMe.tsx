@@ -3,7 +3,7 @@ import selfie from "../components/img/4096x2304-ghost-white-solid-color-backgrou
 function AboutMe() {
   return (
     <div className="bg-zinc-900 container mx-auto p-10">
-        <h1 className="text-blue-800 text-4xl flex justify-center font-bold p-10 uppercase">Who am i?</h1>
+        <h1 className="text-blue-800 text-4xl flex justify-center font-bold p-10 uppercase">Why me?</h1>
         <div className="grid grid-cols-1 items-center lg:grid-cols-2 mx-20">
             <div className="px-10">
                 <img className="h-13 w-13 animate-pulse" src={selfie} alt="selfie"/>
